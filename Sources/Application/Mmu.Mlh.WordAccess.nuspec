@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Mmu.Mlh.WordAccess</id>
+    <version>1.0.0.0</version>
+    <title>MyLittleHelpers.WordAccess</title>
+    <authors>DrMueller</authors>
+    <owners>DrMueller</owners>
+    <projectUrl>https://github.com/DrMueller/MLH.WordAccess</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/DrMueller/MLH.WordAccess/master/Sources/Application/Infrastructure/Assets/M.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DrMuellers little Word Access</description>
+    <copyright>DrMueller</copyright>
+    <tags></tags>
+  </metadata>
+</package>
