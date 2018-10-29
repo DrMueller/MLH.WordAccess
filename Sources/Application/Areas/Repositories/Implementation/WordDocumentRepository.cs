@@ -8,16 +8,16 @@ namespace Mmu.Mlh.WordAccess.Areas.Repositories.Implementation
 {
     internal class WordDocumentRepository : IWordDocumentRepository
     {
-        private readonly IWordDocumentHyperlinksServant _hyperlinksServant;
-        private readonly IWordDocumentShapesServant _shapesServant;
-        private readonly IWordDocumentTablesServant _tablesServant;
-        private readonly IWordDocumentWordsServant _wordsServant;
+        private readonly IHyperlinksServant _hyperlinksServant;
+        private readonly IShapesServant _shapesServant;
+        private readonly ITablesServant _tablesServant;
+        private readonly ICharactersServant _wordsServant;
 
         public WordDocumentRepository(
-            IWordDocumentShapesServant shapesServant,
-            IWordDocumentTablesServant tablesServant,
-            IWordDocumentWordsServant wordsServant,
-            IWordDocumentHyperlinksServant hyperlinksServant)
+            IShapesServant shapesServant,
+            ITablesServant tablesServant,
+            ICharactersServant wordsServant,
+            IHyperlinksServant hyperlinksServant)
         {
             _shapesServant = shapesServant;
             _tablesServant = tablesServant;
@@ -35,7 +35,7 @@ namespace Mmu.Mlh.WordAccess.Areas.Repositories.Implementation
                     {
                         app = new Application();
                         var nativeDocument = app.Documents.Open(filePath);
-                        var words = await _wordsServant.GetWordsAsync(nativeDocument);
+                        var words = await _wordsServant.GetCharactersAsync(nativeDocument);
                         var tables = await _tablesServant.GetTablesAsync(nativeDocument);
                         var shapes = await _shapesServant.GetShapesAsync(nativeDocument);
                         var hyperlinks = await _hyperlinksServant.GetHyperLinksAsync(nativeDocument);

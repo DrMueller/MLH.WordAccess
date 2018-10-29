@@ -7,7 +7,7 @@ using nat = Microsoft.Office.Interop.Word;
 
 namespace Mmu.Mlh.WordAccess.Areas.Repositories.Servants.Implementation
 {
-    internal class WordDocumentHyperlinksServant : IWordDocumentHyperlinksServant
+    internal class HyperlinksServant : IHyperlinksServant
     {
         public async Task<IReadOnlyCollection<Hyperlink>> GetHyperLinksAsync(nat.Document nativeDocument)
         {

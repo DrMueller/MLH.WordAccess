@@ -1,8 +1,9 @@
-﻿using Mmu.Mlh.LanguageExtensions.Areas.Invariance;
+﻿using Mmu.Mlh.DomainExtensions.Areas.DomainModeling;
+using Mmu.Mlh.LanguageExtensions.Areas.Invariance;
 
 namespace Mmu.Mlh.WordAccess.Areas.Models
 {
-    public class Font
+    public class Font : ValueObject<Font>
     {
         public string Name { get; }
         public double Size { get; }

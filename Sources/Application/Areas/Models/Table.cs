@@ -5,14 +5,15 @@ namespace Mmu.Mlh.WordAccess.Areas.Models
 {
     public class Table : IElementWithCaption
     {
-        public string CaptionText { get; }
+        public Characters Caption { get; }
         public IReadOnlyCollection<Cell> Cells { get; }
 
-        public Table(string captionText, IReadOnlyCollection<Cell> cells)
+        public Table(Characters caption, IReadOnlyCollection<Cell> cells)
         {
+            Guard.ObjectNotNull(() => caption);
             Guard.ObjectNotNull(() => cells);
 
-            CaptionText = captionText;
+            Caption = caption;
             Cells = cells;
         }
     }

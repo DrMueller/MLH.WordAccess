@@ -6,11 +6,11 @@ namespace Mmu.Mlh.WordAccess.Areas.Models
     {
         public int ColumnIndex { get; }
         public int RowIndex { get; }
-        public string Value { get; }
+        public Characters Value { get; }
 
-        public Cell(int columnIndex, int rowIndex, string value)
+        public Cell(int columnIndex, int rowIndex, Characters value)
         {
-            Guard.StringNotNullOrEmpty(() => value);
+            Guard.ObjectNotNull(() => value);
 
             ColumnIndex = columnIndex;
             RowIndex = rowIndex;

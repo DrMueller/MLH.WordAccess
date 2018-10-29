@@ -6,11 +6,11 @@ using nat = Microsoft.Office.Interop.Word;
 
 namespace Mmu.Mlh.WordAccess.Areas.Repositories.Servants.Implementation
 {
-    internal class WordDocumentTablesServant : IWordDocumentTablesServant
+    internal class TablesServant : ITablesServant
     {
-        private readonly IWordDocumentTextServant _textServant;
+        private readonly ITextServant _textServant;
 
-        public WordDocumentTablesServant(IWordDocumentTextServant textServant)
+        public TablesServant(ITextServant textServant)
         {
             _textServant = textServant;
         }

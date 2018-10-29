@@ -2,7 +2,7 @@
 
 namespace Mmu.Mlh.WordAccess.Areas.Repositories.Servants
 {
-    internal interface IWordDocumentTextServant
+    internal interface ITextServant
     {
         string GetNextSentenceText(Document document, Range range);
 

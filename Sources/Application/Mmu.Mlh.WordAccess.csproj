@@ -62,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas\Models\Cell.cs" />
+    <Compile Include="Areas\Models\Character.cs" />
+    <Compile Include="Areas\Models\Characters.cs" />
     <Compile Include="Areas\Models\Font.cs" />
     <Compile Include="Areas\Models\HyperLink.cs" />
     <Compile Include="Areas\Models\IElementWithCaption.cs" />
@@ -74,16 +76,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Areas\Repositories\Implementation\WordDocumentRepository.cs" />
     <Compile Include="Areas\Repositories\IWordDocumentRepository.cs" />
-    <Compile Include="Areas\Repositories\Servants\Implementation\WordDocumentHyperlinksServant.cs" />
-    <Compile Include="Areas\Repositories\Servants\Implementation\WordDocumentShapesServant.cs" />
-    <Compile Include="Areas\Repositories\Servants\Implementation\WordDocumentTablesServant.cs" />
-    <Compile Include="Areas\Repositories\Servants\Implementation\WordDocumentTextServant.cs" />
+    <Compile Include="Areas\Repositories\Servants\Implementation\HyperlinksServant.cs" />
+    <Compile Include="Areas\Repositories\Servants\Implementation\ShapesServant.cs" />
+    <Compile Include="Areas\Repositories\Servants\Implementation\TablesServant.cs" />
+    <Compile Include="Areas\Repositories\Servants\Implementation\TextServant.cs" />
     <Compile Include="Areas\Repositories\Servants\Implementation\WordDocumentWordsServant.cs" />
-    <Compile Include="Areas\Repositories\Servants\IWordDocumentHyperlinksServant.cs" />
-    <Compile Include="Areas\Repositories\Servants\IWordDocumentShapesServant.cs" />
-    <Compile Include="Areas\Repositories\Servants\IWordDocumentTablesServant.cs" />
-    <Compile Include="Areas\Repositories\Servants\IWordDocumentTextServant.cs" />
-    <Compile Include="Areas\Repositories\Servants\IWordDocumentWordsServant.cs" />
+    <Compile Include="Areas\Repositories\Servants\IHyperlinksServant.cs" />
+    <Compile Include="Areas\Repositories\Servants\IShapesServant.cs" />
+    <Compile Include="Areas\Repositories\Servants\ITablesServant.cs" />
+    <Compile Include="Areas\Repositories\Servants\ITextServant.cs" />
+    <Compile Include="Areas\Repositories\Servants\ICharactersServant.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

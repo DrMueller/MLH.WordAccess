@@ -2,11 +2,11 @@
 {
     public class Shape : IElementWithCaption
     {
-        public string CaptionText { get; }
-
-        public Shape(string captionText)
+        public Shape(Characters caption)
         {
-            CaptionText = captionText;
+            Caption = caption;
         }
+
+        public Characters Caption { get; }
     }
 }

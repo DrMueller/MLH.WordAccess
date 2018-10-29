@@ -7,22 +7,22 @@ namespace Mmu.Mlh.WordAccess.Areas.Models
     {
         public IReadOnlyCollection<Hyperlink> HyperLinks { get; }
         public IReadOnlyCollection<Shape> Shapes { get; }
+        public Characters Text { get; }
         public IReadOnlyCollection<Table> Tables { get; }
-        public IReadOnlyCollection<Word> Words { get; }
 
         public WordDocument(
-            IReadOnlyCollection<Word> words,
+            Characters text,
             IReadOnlyCollection<Table> tables,
             IReadOnlyCollection<Shape> shapes,
             IReadOnlyCollection<Hyperlink> hyperLinks
         )
         {
-            Guard.ObjectNotNull(() => words);
+            Guard.ObjectNotNull(() => text);
             Guard.ObjectNotNull(() => tables);
             Guard.ObjectNotNull(() => shapes);
             Guard.ObjectNotNull(() => hyperLinks);
 
-            Words = words;
+            Text = text;
             Tables = tables;
             Shapes = shapes;
             HyperLinks = hyperLinks;

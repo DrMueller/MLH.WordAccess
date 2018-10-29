@@ -4,11 +4,11 @@ using Microsoft.Office.Interop.Word;
 
 namespace Mmu.Mlh.WordAccess.Areas.Repositories.Servants.Implementation
 {
-    internal class WordDocumentShapesServant : IWordDocumentShapesServant
+    internal class ShapesServant : IShapesServant
     {
-        private readonly IWordDocumentTextServant _textServant;
+        private readonly ITextServant _textServant;
 
-        public WordDocumentShapesServant(IWordDocumentTextServant textServant)
+        public ShapesServant(ITextServant textServant)
         {
             _textServant = textServant;
         }

@@ -18,11 +18,11 @@ namespace Mmu.Mlh.WordAccess.Infrastructure.DependencyInjection
                 });
 
             For<IWordDocumentRepository>().Use<WordDocumentRepository>().Singleton();
-            For<IWordDocumentHyperlinksServant>().Use<WordDocumentHyperlinksServant>().Singleton();
-            For<IWordDocumentShapesServant>().Use<WordDocumentShapesServant>().Singleton();
-            For<IWordDocumentTablesServant>().Use<WordDocumentTablesServant>().Singleton();
-            For<IWordDocumentTextServant>().Use<WordDocumentTextServant>().Singleton();
-            For<IWordDocumentWordsServant>().Use<WordDocumentWordsServant>().Singleton();
+            For<IHyperlinksServant>().Use<HyperlinksServant>().Singleton();
+            For<IShapesServant>().Use<ShapesServant>().Singleton();
+            For<ITablesServant>().Use<TablesServant>().Singleton();
+            For<ITextServant>().Use<TextServant>().Singleton();
+            For<ICharactersServant>().Use<WordDocumentWordsServant>().Singleton();
         }
     }
 }

@@ -4,7 +4,7 @@ using Microsoft.Office.Interop.Word;
 
 namespace Mmu.Mlh.WordAccess.Areas.Repositories.Servants.Implementation
 {
-    internal class WordDocumentTextServant : IWordDocumentTextServant
+    internal class TextServant : ITextServant
     {
         public string GetNextSentenceText(Document document, Range range)
         {

@@ -2,6 +2,6 @@
 {
     public interface IElementWithCaption
     {
-        string CaptionText { get; }
+        Characters Caption { get; }
     }
 }
